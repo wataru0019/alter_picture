@@ -1,9 +1,14 @@
 {
 	"dependencies": {
 		"@hono/node-server": "^1.14.1",
+		"@langchain/anthropic": "^0.3.18",
+		"@langchain/core": "^0.3.45",
+		"@langchain/google-genai": "^0.2.4",
 		"@modelcontextprotocol/server-filesystem": "^2025.3.28",
 		"@modelcontextprotocol/server-postgres": "^0.6.2",
-		"hono": "^4.7.7"
+		"hono": "^4.7.7",
+		"langchain": "^0.3.22",
+		"zod": "^3.24.3"
 	},
 	"devDependencies": {
 		"@types/node": "^22.14.1",

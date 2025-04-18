@@ -1,7 +1,11 @@
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
+import ai from './routes/ai'
+
 const app = new Hono()
+
+app.route('ai/', ai)
 
 app.get('/', (c) => {
     return c.text('Hello Hono!')
