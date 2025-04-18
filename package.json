@@ -1,0 +1,17 @@
+{
+	"dependencies": {
+		"@hono/node-server": "^1.14.1",
+		"@modelcontextprotocol/server-filesystem": "^2025.3.28",
+		"@modelcontextprotocol/server-postgres": "^0.6.2",
+		"hono": "^4.7.7"
+	},
+	"devDependencies": {
+		"@types/node": "^22.14.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	},
+	"scripts": {
+		"dev": "ts-node src/index.ts",
+		"start": "ts-node src/index.ts"
+	}
+}
