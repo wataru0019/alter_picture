@@ -4,6 +4,7 @@ import { HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { StringOutputParser, StructuredOutputParser } from "@langchain/core/output_parsers";
 import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { RunnableSequence } from '@langchain/core/runnables';
 
 // const model = new ChatAnthropic({
 //     model: 'claude-3-5-haiku-20241022',
@@ -40,7 +41,6 @@ async function chaintool() {
     })
     const parser2 = new StringOutputParser();
     const chain2 = prompt2.pipe(model).pipe(parser2);
-    const chain = chain1.pipe(chain2);
 }
 
 async function main() {
